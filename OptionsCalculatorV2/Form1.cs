@@ -33,7 +33,7 @@ namespace OptionsCalculatorV2
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            this.optionsCalculator.onNewCalculation(underlyingPriceInput.Text, strikePriceInput.Text, dteInput.Text, historicalVolatilityInput.Text, riskFreeRateInput.Text, dividendYieldInput.Text, ratioInput.Text, bidPriceInput.Text);
+            this.optionsCalculator.onNewCalculation(underlyingPriceInput.Text, strikePriceInput.Text, dteInput.Text, historicalVolatilityInput.Text, riskFreeRateInput.Text, dividendYieldInput.Text, ratioInput.Text, bidPriceInput.Text, new CallStrategy());
 
             refreshGUI();
         }
@@ -153,7 +153,7 @@ namespace OptionsCalculatorV2
         {
             if (areOptionInputsFilled())
             {
-                this.optionsCalculator.onNewCalculation(underlyingPriceInput.Text, strikePriceInput.Text, dteInput.Text, historicalVolatilityInput.Text, riskFreeRateInput.Text, dividendYieldInput.Text, ratioInput.Text, bidPriceInput.Text);
+                this.optionsCalculator.onNewCalculation(underlyingPriceInput.Text, strikePriceInput.Text, dteInput.Text, historicalVolatilityInput.Text, riskFreeRateInput.Text, dividendYieldInput.Text, ratioInput.Text, bidPriceInput.Text, new CallStrategy());
                 
                 refreshGUI();
             }

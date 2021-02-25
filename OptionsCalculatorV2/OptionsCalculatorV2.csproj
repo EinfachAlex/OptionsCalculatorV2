@@ -52,6 +52,9 @@
   <ItemGroup>
     <Compile Include="BlackScholes\BlackScholes.cs" />
     <Compile Include="BlackScholes\NormSDist.cs" />
+    <Compile Include="BlackScholes\Strategies\BlackScholesStrategy.cs" />
+    <Compile Include="BlackScholes\Strategies\CallStrategy.cs" />
+    <Compile Include="BlackScholes\Strategies\PutStrategy.cs" />
     <Compile Include="ChartSize.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
